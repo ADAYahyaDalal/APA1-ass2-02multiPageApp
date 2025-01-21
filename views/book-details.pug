@@ -4,13 +4,15 @@
 extends layout
 
 block content
-  //- Demonstrating a detailed view with headings and paragraphs
+  //- Demonstrating a detailed view with headings and paragraphs - .book-details: A <div> with the class book-details for styling.
+
   h2= book.title
-  .book-details
+  .book-details 
     //- Using paragraphs (p) with strong tags for emphasis
     p 
       strong Author: 
-      | #{book.author}
+      | #{book.author} 
+      //dynamic
     p 
       strong Year: 
       | #{book.year}

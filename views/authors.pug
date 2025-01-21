@@ -7,13 +7,16 @@ block content
   h2 Authors
   //- Demonstrating a table for displaying structured data
   table.authors-table
-    //- Table header (thead) with column names
+    //- Table header (thead) with column names //Creates a table with a class of authors-table for styling purposes. //tr: Represents a table row.
     thead
-      tr
+      tr 
         th Name
-        th Birth Year
+        th Birth Year   
         th Nationality
-    //- Table body (tbody) with rows of data
+    //- Table body (tbody) with rows of data - thead: th: Represents a table header cell. Columns are titled "Name," "Birth Year," and "Nationality."
+
+
+
     tbody
       each author in authors
         tr

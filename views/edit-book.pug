@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 Edit Book
+  form(action=`/edit-book/${book.id}` method="POST")
+    label(for="title") Title:
+    input(type="text" id="title" name="title" value=book.title required)
+    br
+    label(for="author") Author:
+    input(type="text" id="author" name="author" value=book.author required)
+    br
+    label(for="year") Year:
+    input(type="number" id="year" name="year" value=book.year required)
+    br
+    label(for="genre") Genre:
+    input(type="text" id="genre" name="genre" value=book.genre required)
+    br
+    button(type="submit") Save Changes

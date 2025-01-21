@@ -6,7 +6,8 @@ extends layout
 block content
   h2 Add a New Book
   //- Demonstrating a form with various input types
-  form(action="/add-book" method="POST")
+  form(action="/add-book" method="POST") 
+  
     //- Text input
     .form-group
       label(for="title") Title:
@@ -20,7 +21,7 @@ block content
     //- Number input
     .form-group
       label(for="year") Year:
-      input(type="number" id="year" name="year" required min="1000" max="2023")
+      input(type="number" id="year" name="year" required min="-10000" max="2025")
     
     //- Select dropdown
     .form-group
